@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    scrollbar-width: none;
+}
+
+body {
+    background-color: rgb(0, 51, 34);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    background-color: rgb(0, 182, 97);
+    align-items: center;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+li > a {
+    text-decoration: none;
+    color: rgb(154, 250, 116);
+}
+
+li > a:hover {
+    color: aliceblue;
+}
+
+nav > h3:hover {
+    font-size: 1rem;
+}
+
+main {
+    flex: 1;
+}
+
+h1 > a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer {
+    font-size: 12px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 95, 51);
+    text-align: center;
+    animation: efectorgb 1s linear infinite;
+    cursor: default
+}
+
+@keyframes efectorgb {
+    0%   { color: #ffffff; }
+    50%  { color: #09ff00; }
+    100% { color: #ffffff; }
+}
+
+/*INICIO INICIO INICIO INICIO INICIO INICIO INICIO*/
+
+.container {
+    margin: 73px 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.tarjeta {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    width: 200px;
+    height: 550px;
+    font-size: 40px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tarjeta > h3 {
+    cursor: default;
+}
+
+.tarjeta > p {
+    font-size: .7rem;
+    font-weight: 100;
+    cursor: default;
+    margin: 0 5%;
+}
+
+.tarjeta > img {
+    width: auto;
+    height: 250px;
+}
+
+.tarjeta > button {
+    width: 70px;
+    height: 20px;
+    font-weight: bold;
+    background-color: rgb(1, 97, 52);
+    border-style: none;
+    cursor: pointer;
+    border-radius: 8px;
+    border-color: transparent;
+    color: aliceblue;
+}
+.tarjeta:hover {
+    h3 {
+        color: rgb(0, 182, 97);
+    }
+}
+
+/*CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO*/
+.contacto {
+    margin: 10%;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    color: aliceblue;
+}
+
+.contacto > div {
+    width: 800px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3%;
+    border-radius: 15px;
+}
+
+.cajaIz {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.cajaIz > div {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cajaIz > h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.cajaDe {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+input {
+    padding: 2px 2px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100%;
+}
+
+.cajaDe > button {
+    margin: 0 auto;
+    border-radius: 10px;
+    border-color: transparent;
+    width: 70px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: rgb(0, 182, 97);
+    cursor: pointer
+}
+
+/*ACERCADE ACERCADE ACERCADE ACERCADE ACERCADE ACERCADE ACERCADE*/
+.acercade {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 10% 16% 0;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.acercade > img {
+    margin: 70px auto;
+    width: 150px;
+    transform: rotate(45deg);
+}
+
+.parrafo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
